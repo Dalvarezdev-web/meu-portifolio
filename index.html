@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Davi Alvarez de Jesus</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="cabecalho">
+    <nav class="menu container" aria-label="Menu principal">
+      <a class="logo" href="#sobre">Davi<span>Dev</span></a>
+
+      <button class="botao-menu" id="botao-menu" aria-label="Abrir menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <ul class="lista-menu" id="lista-menu">
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <button class="botao-tema" id="botao-tema" type="button">Alterar tema</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre" class="secao hero">
+      <div class="container hero-conteudo">
+        <div>
+          <p class="tag">Estudante de Ciência da Computação</p>
+          <h1>Olá, eu sou Davi Alvarez de Jesus</h1>
+          <p class="texto-destaque">
+            Atualmente curso Ciência da Computação na Uninter e estou focado em me tornar um desenvolvedor Full Stack.
+          </p>
+          <p>
+            Sou estudante com interesse em desenvolvimento web, boas práticas de programação e criação de soluções eficientes. Gosto de assumir responsabilidades, resolver problemas de forma criativa e desenvolver aplicações modernas, escaláveis e funcionais.
+          </p>
+          <div class="botoes-hero">
+            <a class="botao principal" href="#portfolio">Ver projetos</a>
+            <a class="botao secundario" href="https://www.linkedin.com/in/dalvarezdev-web/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="card-perfil" aria-label="Resumo do perfil">
+          <img class="avatar-img" src="img/perfil-davi.jpeg" alt="Foto de perfil de Davi Alvarez" />
+          <h2>Davi Alvarez</h2>
+          <p>JavaScript • Python • HTML/CSS • React</p>
+          <span>Foco em soluções eficientes e entrega de resultados.</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacao" class="secao">
+      <div class="container">
+        <h2>Minha Formação</h2>
+        <div class="grade-cards">
+          <article class="card">
+            <h3>Ciência da Computação</h3>
+            <p>Bacharelado em Ciência da Computação - Distância Uninter (Cursando)</p>
+          </article>
+
+          <article class="card">
+            <h3>Cursos Complementares</h3>
+            <ul>
+              <li>Inglês técnico para TI</li>
+              <li>Desenvolvimento Web com JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Idiomas</h3>
+            <p>Inglês básico para programação.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao habilidades">
+      <div class="container">
+        <h2>Tecnologias e Ferramentas</h2>
+        <div class="tags">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Python</span>
+          <span>React.js</span>
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>VS Code</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="secao">
+      <div class="container">
+        <h2>Portfólio</h2>
+        <p class="subtitulo">Alguns links e projetos que representam minha evolução na área de tecnologia.</p>
+
+        <div class="grade-cards">
+          <article class="card projeto">
+            <h3>Perfil GitHub</h3>
+            <p>Repositório de apresentação com tecnologias, objetivos e informações profissionais.</p>
+            <a href="https://github.com/Dalvarezdev-web" target="_blank" rel="noopener">Acessar GitHub</a>
+          </article>
+
+          <article class="card projeto">
+            <h3>LinkedIn</h3>
+            <p>Perfil profissional com informações de carreira, formação e contato.</p>
+            <a href="https://www.linkedin.com/in/dalvarezdev-web/" target="_blank" rel="noopener">Acessar LinkedIn</a>
+          </article>
+
+          <article class="card projeto">
+            <h3>Projeto Web</h3>
+            <p>Espaço reservado para adicionar um projeto de HTML, CSS e JavaScript.</p>
+            <a href="#contato">Em desenvolvimento</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="secao contato">
+      <div class="container">
+        <h2>Contato</h2>
+        <p class="subtitulo">Preencha o formulário abaixo para simular o envio de uma mensagem.</p>
+
+        <form id="formulario-contato" novalidate>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" />
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" />
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+
+          <button class="botao principal" type="submit">Enviar mensagem</button>
+          <p id="mensagem-retorno" class="mensagem-retorno" role="status"></p>
+        </form>
+
+        <p class="email-contato">E-mail: <a href="mailto:dalvarez20.dev@gmail.com">dalvarez20.dev@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2026 Davi Alvarez de Jesus. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
